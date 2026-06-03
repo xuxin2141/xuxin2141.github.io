@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="160" viewBox="0 0 120 160">
+  <rect width="120" height="160" fill="#004d40"/>
+  <rect x="8" y="8" width="104" height="144" fill="none" stroke="#4db6ac" stroke-width="1"/>
+  <text x="60" y="55" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-weight="bold" fill="#fff">Journal of</text>
+  <text x="60" y="70" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-weight="bold" fill="#fff">Cleaner</text>
+  <text x="60" y="85" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-weight="bold" fill="#fff">Production</text>
+  <text x="60" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#b2dfdb">IF 10.0</text>
+  <text x="60" y="116" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#b2dfdb">CAS 一区 Top</text>
+</svg>

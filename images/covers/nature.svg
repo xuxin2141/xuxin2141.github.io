@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="160" viewBox="0 0 120 160">
+  <rect width="120" height="160" fill="#1a1a2e"/>
+  <rect x="8" y="8" width="104" height="144" fill="none" stroke="#e94560" stroke-width="1"/>
+  <text x="60" y="70" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-weight="bold" fill="#e94560">Nature</text>
+  <text x="60" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#aaa">International Journal</text>
+  <text x="60" y="110" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#aaa">of Science</text>
+</svg>

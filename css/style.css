@@ -1,0 +1,513 @@
+/* ========================================
+   Xu Xin - Academic Personal Website
+   Inspired by faculty pages at Soochow University
+   English-primary, clean academic style
+   ======================================== */
+
+:root {
+  --primary: #1a3a5c;
+  --primary-light: #2c5f8a;
+  --accent: #8b0000;
+  --accent-light: #c62828;
+  --bg: #f5f5f5;
+  --white: #ffffff;
+  --text: #333333;
+  --text-light: #555555;
+  --text-muted: #888888;
+  --border: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --radius: 6px;
+  --max-width: 1060px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 56px; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+a { color: var(--primary-light); text-decoration: none; }
+a:hover { color: var(--accent-light); text-decoration: underline; }
+
+/* ========================================
+   JOURNAL BANNER
+   ======================================== */
+.journal-banner {
+  background: #12122a;
+  padding: 16px 0;
+  overflow: hidden;
+}
+.journal-banner-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.cover-img {
+  height: 140px;
+  width: auto;
+  border-radius: 3px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  transition: transform 0.3s;
+}
+.cover-img:hover { transform: translateY(-3px); }
+
+/* ========================================
+   HEADER
+   ======================================== */
+.site-header {
+  background: var(--white);
+  border-bottom: 3px solid var(--primary);
+  padding: 34px 20px;
+}
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-left { flex-shrink: 0; }
+.header-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+}
+.header-right { flex: 1; }
+.header-name {
+  font-size: 1.75rem;
+  color: var(--primary);
+  margin-bottom: 2px;
+}
+.name-cn {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+.header-role {
+  font-size: 1rem;
+  color: var(--accent-light);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.header-affil {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+.header-bio {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.header-research {
+  font-size: 0.88rem;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.header-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 0.84rem;
+}
+.header-contact a,
+.header-contact span {
+  color: var(--text-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.header-contact a:hover { color: var(--accent-light); }
+
+/* ========================================
+   HIGHLIGHTS BAR
+   ======================================== */
+.highlights-bar {
+  background: #f0f4f8;
+  border-bottom: 1px solid var(--border);
+}
+.highlights-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+.highlights-inner p {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.65;
+  text-align: center;
+}
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+.site-nav {
+  background: var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+}
+.nav-inner a {
+  color: rgba(255,255,255,0.85);
+  padding: 13px 22px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+.nav-inner a:hover {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
+.main-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+.content-section {
+  margin-bottom: 44px;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 32px 36px;
+}
+.section-title {
+  font-size: 1.25rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+}
+.cn-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+.section-body { }
+
+/* --- Sub-heading --- */
+.sub-heading {
+  font-size: 0.95rem;
+  color: var(--primary-light);
+  margin: 18px 0 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed var(--border);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.sub-heading:first-of-type { margin-top: 0; }
+
+/* ========================================
+   TIMELINE (Education, Affiliations, Projects)
+   ======================================== */
+.timeline-list { }
+.timeline-entry {
+  display: flex;
+  gap: 18px;
+  padding-bottom: 18px;
+  position: relative;
+}
+.timeline-entry:last-child { padding-bottom: 0; }
+.tl-dot {
+  width: 11px;
+  height: 11px;
+  min-width: 11px;
+  background: var(--primary-light);
+  border-radius: 50%;
+  margin-top: 8px;
+}
+.timeline-entry:not(:last-child) .tl-dot::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  width: 2px;
+  height: calc(100% + 2px);
+  background: var(--border);
+}
+.tl-content { flex: 1; }
+.tl-date {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  margin-bottom: 2px;
+}
+.tl-content h3 { font-size: 0.98rem; font-weight: 600; }
+.tl-content p { font-size: 0.86rem; color: var(--text-light); margin-bottom: 2px; }
+.tl-note { font-size: 0.82rem !important; color: var(--text-muted) !important; font-style: italic; }
+
+/* ========================================
+   RESEARCH CARDS
+   ======================================== */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+.research-card {
+  padding: 20px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.research-card:hover { box-shadow: var(--shadow); }
+.rc-icon {
+  font-size: 1.8rem;
+  color: var(--primary-light);
+  margin-bottom: 10px;
+}
+.research-card h3 { font-size: 0.92rem; margin-bottom: 6px; color: var(--primary); }
+.research-card p { font-size: 0.8rem; color: var(--text-light); line-height: 1.55; }
+
+/* ========================================
+   PUBLICATIONS (numbered, with figures)
+   ======================================== */
+.pub-entry {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+.pub-entry:last-child { margin-bottom: 0; }
+.pub-header {
+  padding: 18px 20px;
+  display: flex;
+  gap: 12px;
+}
+.pub-num {
+  font-weight: 700;
+  color: var(--primary-light);
+  font-size: 0.85rem;
+  min-width: 26px;
+  padding-top: 2px;
+}
+.pub-meta { flex: 1; }
+.pub-authors { font-size: 0.87rem; margin-bottom: 3px; }
+.pub-title { font-size: 0.92rem; font-weight: 500; margin-bottom: 4px; line-height: 1.5; }
+.pub-journal { font-size: 0.84rem; color: var(--text-light); margin-bottom: 8px; }
+.pub-journal em { color: var(--text); }
+
+.badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  padding: 1px 7px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-left: 4px;
+}
+.badge-top { background: #ffebee; color: #c62828; }
+.badge-if { background: #fff3e0; color: #e65100; }
+.badge-cited { background: #e8f5e9; color: #2e7d32; }
+.badge-scopus { background: #e3f2fd; color: #1565c0; }
+
+.pub-links {
+  display: flex; gap: 16px; font-size: 0.83rem; font-weight: 500;
+}
+.pub-links a i { margin-right: 3px; }
+.no-link { color: var(--text-muted); font-style: italic; font-size: 0.8rem; }
+
+/* Paper figure */
+.pub-figure {
+  border-top: 1px solid var(--border);
+  background: #fafafa;
+  min-height: 190px;
+}
+.figure-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 44px 20px;
+  color: var(--text-muted);
+  gap: 10px;
+}
+.figure-placeholder i { font-size: 2.6rem; opacity: 0.35; }
+.figure-placeholder span { font-size: 0.84rem; opacity: 0.55; }
+
+/* ========================================
+   PATENTS & SOFTWARE
+   ======================================== */
+.ip-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 5px 0;
+  font-size: 0.88rem;
+}
+.ip-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.ip-tag-pending { background: #fff3e0; color: #e65100; }
+.ip-tag-granted { background: #e8f5e9; color: #2e7d32; }
+
+/* ========================================
+   AWARDS (numbered, with certificate images)
+   ======================================== */
+.award-entry {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.award-entry:last-child { margin-bottom: 0; }
+.award-header {
+  padding: 16px 20px;
+  display: flex;
+  gap: 12px;
+}
+.award-num {
+  font-weight: 700;
+  color: var(--primary-light);
+  font-size: 0.85rem;
+  min-width: 26px;
+  padding-top: 2px;
+}
+.award-meta { flex: 1; }
+.award-date {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-light);
+  margin-bottom: 3px;
+}
+.award-meta h3 { font-size: 0.93rem; font-weight: 600; margin-bottom: 3px; }
+.award-meta p { font-size: 0.84rem; color: var(--text-light); }
+
+/* Award certificate image */
+.award-figure {
+  border-top: 1px solid var(--border);
+  background: #fafafa;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.award-figure img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
+}
+.award-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 44px 20px;
+  color: var(--text-muted);
+  gap: 10px;
+}
+.award-placeholder i { font-size: 2.6rem; opacity: 0.35; }
+.award-placeholder span { font-size: 0.84rem; opacity: 0.55; text-align: center; }
+
+/* ========================================
+   CONTACT
+   ======================================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.contact-item i {
+  font-size: 1.4rem;
+  color: var(--primary-light);
+  margin-top: 3px;
+}
+.contact-item h4 {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+.contact-item a, .contact-item p {
+  font-size: 0.88rem;
+  color: var(--text);
+  word-break: break-all;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.site-footer {
+  background: var(--primary);
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+  padding: 18px;
+  font-size: 0.8rem;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .header-photo { width: 100px; height: 100px; }
+  .header-name { font-size: 1.4rem; }
+  .header-contact { justify-content: center; }
+
+  .cover-img { height: 100px; }
+  .journal-banner-inner { gap: 10px; }
+
+  .nav-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-inner a { padding: 10px 12px; font-size: 0.8rem; }
+
+  .content-section { padding: 20px 14px; }
+  .main-content { padding: 20px 8px 40px; }
+
+  .pub-header, .award-header { flex-direction: column; gap: 6px; }
+  .pub-figure, .pub-figure .figure-placeholder { min-height: 140px; }
+
+  .research-grid { grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+}

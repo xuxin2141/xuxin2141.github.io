@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="160" viewBox="0 0 120 160">
+  <rect width="120" height="160" fill="#37474f"/>
+  <rect x="8" y="8" width="104" height="144" fill="none" stroke="#90a4ae" stroke-width="1"/>
+  <text x="60" y="58" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#fff">Drying</text>
+  <text x="60" y="76" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#fff">Technology</text>
+  <text x="60" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#b0bec5">干燥领域</text>
+  <text x="60" y="111" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#b0bec5">国际权威期刊</text>
+</svg>

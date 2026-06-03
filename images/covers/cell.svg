@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="160" viewBox="0 0 120 160">
+  <rect width="120" height="160" fill="#1b5e20"/>
+  <rect x="8" y="8" width="104" height="144" fill="none" stroke="#66bb6a" stroke-width="1"/>
+  <text x="60" y="68" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="#66bb6a">Cell</text>
+  <text x="60" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#a5d6a7">Cell Press</text>
+</svg>
