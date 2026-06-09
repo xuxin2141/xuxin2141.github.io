@@ -352,31 +352,54 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 .figure-placeholder i { font-size: 2.6rem; opacity: 0.35; }
 .figure-placeholder span { font-size: 0.84rem; opacity: 0.55; }
 
-/* Scrollable figure gallery */
+/* Figure gallery — tiles on desktop, scrolls on mobile */
 .figure-scroll {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   padding: 14px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: #bbb transparent;
 }
 .figure-scroll img {
   flex: 0 0 auto;
-  height: 340px;
+  height: 320px;
+  max-width: 100%;
   width: auto;
   object-fit: contain;
   border: 1px solid var(--border);
   border-radius: 4px;
   background: #fff;
 }
-/* Webkit scrollbar */
-.figure-scroll::-webkit-scrollbar { height: 7px; }
-.figure-scroll::-webkit-scrollbar-track { background: transparent; }
-.figure-scroll::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
-.figure-scroll::-webkit-scrollbar-thumb:hover { background: #aaa; }
+/* Two images: side by side on desktop */
+.figure-scroll img:first-child:nth-last-child(2),
+.figure-scroll img:first-child:nth-last-child(2) ~ img {
+  max-width: calc(50% - 5px);
+}
+/* Three images: three in a row on desktop */
+.figure-scroll img:first-child:nth-last-child(3),
+.figure-scroll img:first-child:nth-last-child(3) ~ img {
+  max-width: calc(33.333% - 7px);
+}
+
+@media (max-width: 768px) {
+  .figure-scroll {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #bbb transparent;
+  }
+  .figure-scroll img {
+    height: 260px;
+    max-width: none;
+  }
+  .figure-scroll::-webkit-scrollbar { height: 5px; }
+  .figure-scroll::-webkit-scrollbar-track { background: transparent; }
+  .figure-scroll::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+  .figure-scroll::-webkit-scrollbar-thumb:hover { background: #aaa; }
+}
 
 /* ========================================
    PATENTS & SOFTWARE
