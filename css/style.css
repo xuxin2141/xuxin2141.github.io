@@ -352,6 +352,32 @@ a:hover { color: var(--accent-light); text-decoration: underline; }
 .figure-placeholder i { font-size: 2.6rem; opacity: 0.35; }
 .figure-placeholder span { font-size: 0.84rem; opacity: 0.55; }
 
+/* Scrollable figure gallery */
+.figure-scroll {
+  display: flex;
+  gap: 10px;
+  padding: 14px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #bbb transparent;
+}
+.figure-scroll img {
+  flex: 0 0 auto;
+  height: 340px;
+  width: auto;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+}
+/* Webkit scrollbar */
+.figure-scroll::-webkit-scrollbar { height: 7px; }
+.figure-scroll::-webkit-scrollbar-track { background: transparent; }
+.figure-scroll::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+.figure-scroll::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
 /* ========================================
    PATENTS & SOFTWARE
    ======================================== */
